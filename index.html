@@ -9,10 +9,15 @@
     <title>Intro to Front-end</title>
   </head>
   <body>
-    <img src="./img/front-end.jpg" alt="Front-end image" />
+    <img
+      src="./img/front-end.jpg"
+      alt="Front-end image"
+      width="300"
+      height="250"
+    />
     <ol>
       <li>
-        Знакомтсво с Web
+        Знакомство с Web
         <ul>
           <li>Краткая история Web и что такое интернет.</li>
           <li>Как устроен браузер и как он получает страницы по сети.</li>
@@ -91,6 +96,101 @@
         </tr>
       </tbody>
     </table>
+
+    <hr />
+    <form action="./" method="get">
+      <fieldset>
+        <legend>My first form</legend>
+        <p>
+          <label for="name">Name </label>
+          <br />
+          <input
+            id="name"
+            type="text"
+            placeholder="Name"
+            name="name"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Email </label>
+          <br />
+          <input id="email" type="email" name="email" required />
+        </p>
+        <p>
+          <label for="password">Password </label>
+          <br />
+          <input id="password" type="password" name="password" required />
+        </p>
+        <p>
+          <label for="level">Your programming language</label>
+          <br />
+          <input id="level" type="range" min="1" max="10" name="level" />
+        </p>
+        <p>
+          <label>What does HTML stand for?</label>
+          <br />
+          <input
+            id="checkbox-1"
+            type="checkbox"
+            name="checkbox_html"
+            value="1"
+          />
+          <label for="checkbox-1">Hyperlinks and Text Markup Language</label>
+          <br />
+          <input
+            id="checkbox-2"
+            type="checkbox"
+            name="checkbox_html"
+            value="2"
+          />
+          <label for="checkbox-2">Home Tool Markup Language</label>
+          <br />
+          <input
+            id="checkbox-3"
+            type="checkbox"
+            name="checkbox_html"
+            value="3"
+          />
+          <label for="checkbox-3">Hyper Text Markup Language</label>
+        </p>
+        <p>
+          <label>What does HTTP stand for?</label>
+          <br />
+          <input id="radio-1" type="radio" name="radio_http" value="1" />
+          <label for="radio-1">Hyper Text Translate Protocol</label>
+          <br />
+          <input id="radio-2" type="radio" name="radio_http" value="2" />
+          <label for="radio-2">Hyper Text Transmission Protocol</label>
+          <br />
+          <input id="radio-3" type="radio" name="radio_http" value="3" />
+          <label for="radio-3">Hyper Text Transfer Protocol</label>
+        </p>
+        <p>
+          <label for="comment">Comment</label>
+          <br />
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Comment"
+            maxlength="500"
+          ></textarea>
+        </p>
+        <p>
+          <label for="select_html">What does HTML stand for?</label>
+          <br />
+          <select id="select_html" name="select_html">
+            <option disabled selected>Your answer</option>
+            <option value="1">Hyperlinks and Text Markup Language</option>
+            <option value="2">Home Tool Markup Language</option>
+            <option value="3">Hyper Text Markup Language</option>
+          </select>
+        </p>
+        <p>
+          <button>Send</button>
+        </p>
+      </fieldset>
+    </form>
     <hr />
   </body>
 </html>
