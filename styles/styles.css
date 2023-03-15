@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.offer-block {
+    width: 1440px;
+    height: 570px;
+}
+.offer-block-title {
+    text-align: center;
+    padding-top: 120px;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #383838;
+}
+
+.offer-block-stroke-png{
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin-top: 20px;
+    margin-left: 670px;
+}
+
+.offer-block-images {
+    display: inline-block;
+}
+
+.support-image {
+    margin-top: 85px;
+    margin-left: 215px;
+}
+
+.communication-image {
+    margin-top: 89px;
+    margin-left: 232px;
+}
+
+.booking-image {
+    margin-top: 97px;
+    margin-left: 222px;
+}
+
+.reviews-image {
+    margin-top: 84px;
+    margin-left: 217px;
+    margin-right: 190px;
+}
+
+.offer-block-offers {
+    display: inline-block;
+    text-align: center;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #383838;
+}
+
+.support-text {
+    width: 141px;
+    height: 28px;
+    margin-top: 52px;
+    margin-left: 181px;
+}
+
+.communication-text {
+    width: 296px;
+    height: 28px;
+    margin-top: 56px;
+    margin-left: 94px;
+}
+
+.booking-text {
+    width: 168px;
+    height: 28px;
+    margin-top: 65px;
+    margin-left: 80px;
+}
+
+.reviews-text {
+    width: 225px;
+    height: 28px;
+    margin-top: 60px;
+    margin-left: 116px;
+}
