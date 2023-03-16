@@ -2,195 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Intro to front-end" />
-    <meta name="keywords" content="Web, HTML" />
-    <meta name="author" content="Liudmila Tutsina" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intro to Front-end</title>
+    <title>What do we offer</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <img
-      src="./img/front-end.jpg"
-      alt="Front-end image"
-      width="300px"
-      height="250px"
-    />
-    <ol>
-      <li>
-        Знакомство с Web
-        <ul>
-          <li>Краткая история Web и что такое интернет.</li>
-          <li>Как устроен браузер и как он получает страницы по сети.</li>
-          <li>Что такое Git?</li>
-          <li>Создание первого репозитория.</li>
-          <li>О файле .gitignore.</li>
-        </ul>
-      </li>
+    <div class="advantages">
+      <div class="advantages-title-block">
+        <h2 class="advantages-title">What do we offer</h2>
+        <hr class="advantages-stroke" />
+      </div>
+      <div class="advantages-pics-text-block">
+        <div class="advantages-pics-text">
+          <img
+            alt="support"
+            src="png/support.png"
+            class="advantages-pics"
+          />
+          <p class="advantages-text">Support 24/7</p>
+        </div>
+        <div class="advantages-pics-text">
+          <img
+            alt="communication"
+            src="png/communication.png"
+            class="advantages-pics"
+          />
+          <p class="advantages-text">
+            Communicate directly
+          </p>
+        </div>
+        <div class="advantages-pics-text">
+          <img
+            alt="booking"
+            src="png/booking.png"
+            class="advantages-pics"
+          />
+          <p class="advantages-text">Book online</p>
+        </div>
+        <div class="advantages-pics-text">
+          <img
+            alt="reviews"
+            src="png/reviews.png"
+            class="advantages-pics"
+          />
 
-      <li>
-        HTML-вёрстка - первые шаги
-        <ul>
-          <li>Настройка рабочей среды.</li>
-          <li>Краткая история HTML.</li>
-          <li>Какие бывают теги и что такое атрибут.</li>
-          <li>Теги для работы с текстом.</li>
-          <li>Создание собственной страницы.</li>
-        </ul>
-      </li>
-
-      <li>
-        Погружение в HTML-разметку
-        <ul>
-          <li>Мета-теги.</li>
-          <li>Мнемоники.</li>
-          <li>Теги для работы с изображениями.</li>
-          <li>Теги для работы со списками.</li>
-          <li>Теги для работы с таблицами.</li>
-          <li>Теги для работы с формами.</li>
-          <li>Div-блоки.</li>
-        </ul>
-      </li>
-    </ol>
-    <hr />
-    <table border="1" width="50%">
-      <thead>
-        <tr>
-          <th>Tag</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&#60;table&#62;</td>
-          <td>Defines a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tr&#62;</td>
-          <td>Defines a row in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;th&#62;</td>
-          <td rowspan="2">Defines a "header cell" / "cell" in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;td&#62;</td>
-        </tr>
-        <tr>
-          <td colspan="2">Rarely used</td>
-        </tr>
-        <tr>
-          <td>&#60;caption&#62;</td>
-          <td>Defines a table caption</td>
-        </tr>
-        <tr>
-          <td>&#60;thead&#62;</td>
-          <td>Groups the header content in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tbody&#62;</td>
-          <td>Groups the body content in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tfoot&#62;</td>
-          <td>Groups the footer content in a table</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <hr />
-    <form action="/" method="get">
-      <fieldset>
-        <legend>My first form</legend>
-        <p>
-          <label for="name">Name </label>
-          <br />
-          <input
-            id="name"
-            type="text"
-            placeholder="Name"
-            name="name"
-            required
-          />
-        </p>
-        <p>
-          <label for="email">Email </label>
-          <br />
-          <input id="email" type="email" name="email" required />
-        </p>
-        <p>
-          <label for="password">Password </label>
-          <br />
-          <input id="password" type="password" name="password" required />
-        </p>
-        <p>
-          <label for="level">Your programming language</label>
-          <br />
-          <input id="level" type="range" min="1" max="10" name="level" />
-        </p>
-        <p>
-          <label>What does HTML stand for?</label>
-          <br />
-          <input
-            id="checkbox-1"
-            type="checkbox"
-            name="checkbox_html"
-            value="1"
-          />
-          <label for="checkbox-1">Hyperlinks and Text Markup Language</label>
-          <br />
-          <input
-            id="checkbox-2"
-            type="checkbox"
-            name="checkbox_html"
-            value="2"
-          />
-          <label for="checkbox-2">Home Tool Markup Language</label>
-          <br />
-          <input
-            id="checkbox-3"
-            type="checkbox"
-            name="checkbox_html"
-            value="3"
-          />
-          <label for="checkbox-3">Hyper Text Markup Language</label>
-        </p>
-        <p>
-          <label>What does HTTP stand for?</label>
-          <br />
-          <input id="radio-1" type="radio" name="radio_http" value="1" />
-          <label for="radio-1">Hyper Text Translate Protocol</label>
-          <br />
-          <input id="radio-2" type="radio" name="radio_http" value="2" />
-          <label for="radio-2">Hyper Text Transmission Protocol</label>
-          <br />
-          <input id="radio-3" type="radio" name="radio_http" value="3" />
-          <label for="radio-3">Hyper Text Transfer Protocol</label>
-        </p>
-        <p>
-          <label for="comment">Comment</label>
-          <br />
-          <textarea
-            id="comment"
-            name="comment"
-            placeholder="Comment"
-            maxlength="500"
-          ></textarea>
-        </p>
-        <p>
-          <label for="select_html">What does HTML stand for?</label>
-          <br />
-          <select id="select_html" name="select_html">
-            <option disabled selected>Your answer</option>
-            <option value="1">Hyperlinks and Text Markup Language</option>
-            <option value="2">Home Tool Markup Language</option>
-            <option value="3">Hyper Text Markup Language</option>
-          </select>
-        </p>
-        <p>
-          <button>Send</button>
-        </p>
-      </fieldset>
-    </form>
-    <hr />
+          <p class="advantages-text">Real guests reviews</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
