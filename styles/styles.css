@@ -32,10 +32,10 @@
 }
 
 .advantages-pics-text-block{
-    margin-top: 85px;
+    margin-top: 80px;
+    margin-bottom: 122px;
     display: flex;
     justify-content: center;
-    justify-items: center;
     flex-direction: row;
 }
 
