@@ -5,6 +5,74 @@
     margin: 0;
 }
 
+.header-block {
+    min-height: 100vh;
+    background: url("../images/svg/top-section-background.svg") no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    padding-top: 51px;
+    height: 97px;
+    padding-left: 104px;
+    padding-right: 104px;
+}
+
+header .logo{
+    flex-grow: 1;
+    /*Also justify-content: space-between for header works. Which option is better to use here?*/
+}
+
+header .stays{
+    height: 46px;
+    padding-top: 6px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stays hr {
+    width: 50px;
+    height: 0;
+
+    border: 2px solid #f5bd41;
+}
+
+header .attractions {
+    padding-top: 6px;
+    padding-left: 24px;
+}
+
+header .text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+header .day-night-switcher {
+    padding-top: 6px;
+    padding-left: 48px;
+}
+
+header .account-icon {
+    padding-left: 24px;
+}
+
+header .right-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .advantages {
     display: flex;
     flex-direction: column;
