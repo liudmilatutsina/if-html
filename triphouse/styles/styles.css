@@ -5,13 +5,18 @@
     margin: 0;
 }
 
-.header-block {
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+header {
     min-height: 100vh;
     background: url("../images/svg/top-section-background.svg") no-repeat;
     background-size: cover;
 }
 
-header {
+header .header-block {
     display: flex;
     flex-direction: row;
     /*justify-content: space-between;*/
@@ -36,7 +41,7 @@ header .stays{
     align-items: center;
 }
 
-.stays hr {
+header .stays hr {
     width: 50px;
     height: 0;
 
@@ -49,8 +54,6 @@ header .attractions {
 }
 
 header .text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -73,19 +76,24 @@ header .right-container {
     flex-direction: row;
 }
 
-.advantages {
+.advantages-block {
     display: flex;
     flex-direction: column;
 }
 
-.advantages-title {
+.advantages-block .block-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.advantages-block .block-title .title {
     margin-top: 120px;
 
     width: 306px;
     height: 47px;
 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -93,21 +101,14 @@ header .right-container {
     color: #383838;
 }
 
-.advantages-stroke {
+.advantages-block hr {
     margin-top: 20px;
     width: 100px;
     height: 4px;
     background: #F5BD41;
 }
 
-.advantages-title-block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.advantages-pics-text-block{
+.advantages-block .block-offers{
     margin-top: 80px;
     margin-bottom: 122px;
     display: flex;
@@ -115,7 +116,7 @@ header .right-container {
     flex-direction: row;
 }
 
-.advantages-pics-text {
+.advantages-block .offer {
     width: 296px;
     height: 176px;
 
@@ -127,9 +128,7 @@ header .right-container {
     
 }
 
-.advantages-text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+.advantages-block .block-offers .text {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -143,7 +142,7 @@ footer {
     flex-flow: column;
 }
 
-.footer-block {
+footer .footer-block {
     margin: 120px 272px 64px 104px;
     display: flex;
     flex-flow: row wrap;
@@ -151,19 +150,17 @@ footer {
     align-content: space-between;
 }
 
-.footer-text{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+footer .text{
     font-weight: 300;
     font-size: 20px;
     line-height: 23px;
     text-align: left;
     text-decoration: none;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.footer-about{
+footer .category-about{
     width: 193px;
     height: 211px;
 
@@ -172,7 +169,7 @@ footer {
     justify-content: space-between;
 }
 
-.footer-types{
+footer .category-types{
     width: 133px;
     height: 305px;
 
@@ -181,7 +178,7 @@ footer {
     justify-content: space-between;
 }
 
-.footer-support{
+footer .category-support{
     width: 252px;
     height: 117px;
 
@@ -190,7 +187,7 @@ footer {
     justify-content: space-between;
 }
 
-.footer-mark {
+footer .footer-mark {
     margin-bottom: 120px;
     margin-left: 105px;
 
@@ -204,11 +201,6 @@ footer {
     color: #FFFFFF;
 }
 
-.footer-text-title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+footer .title {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: left;
 }
