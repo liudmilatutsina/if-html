@@ -14,6 +14,10 @@ header {
     min-height: 100vh;
     background: url("../images/svg/top-section-background.svg") no-repeat;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header .header-block {
@@ -76,6 +80,82 @@ header .right-container {
     flex-direction: row;
 }
 
+header .title {
+    /*padding-top: 196px;*/
+    padding-left: 104px;
+    text-align: left;
+
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 59px;
+
+    color: #ffffff;
+}
+
+header .search-block .text-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 128px;
+    padding-right: 672px;
+}
+
+header .search-text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+header .form {
+    display: flex;
+    flex-direction: row;
+    margin-left: 104px;
+    margin-right: 113px;
+    margin-top: 24px;
+    width: 1223px;
+    height: 58px;
+    border-radius: 8px;
+    border: 3px solid #Ffffff;
+    background-color: white;
+}
+
+
+header .destination {
+    padding-left: 24px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    width: 467px;
+    /*border-bottom-left-radius: 8px;*/
+    /*border-top-left-radius: 8px;*/
+    border: 0;
+}
+
+header .check-in-out {
+    padding-left: 24px;
+    padding-top: 23px;
+    padding-bottom: 22px;
+    width: 259px;
+    border: 3px solid #F5BD41;
+    border-radius: 8px;
+}
+
+header .preference {
+    padding-left: 24px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    width: 305px;
+    border: 0;
+}
+
+header button {
+    width: 192px;
+    background: #3077C6;
+    border-radius: 8px;
+}
 .advantages-block {
     display: flex;
     flex-direction: column;
