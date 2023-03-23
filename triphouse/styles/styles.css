@@ -117,6 +117,12 @@ header .title {
     color: #ffffff;
 }
 
+header .search-block {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 header .search-block .text-block {
     display: flex;
     flex-direction: row;
@@ -163,14 +169,11 @@ header .form {
     max-width: 1223px;
     height: 58px;
     border-radius: 8px;
-    border: 3px solid #ffffff;
+    border: 3px solid #F3F3F4;
     background-color: #ffffff;
 }
 
 header .destination {
-    margin-top: -3px;
-    margin-bottom: -3px;
-    margin-left: -3px;
     padding-left: 24px;
     padding-top: 22px;
     padding-bottom: 21px;
@@ -179,9 +182,16 @@ header .destination {
     border-radius: 8px;
 }
 
+input.destination:focus {
+    margin-top: -2px;
+    margin-left: -3px;
+    margin-bottom: -2px;
+    border: 3px solid #F5BD41;
+}
+
 header .check-in-out {
-    margin-top: -3px;
-    margin-bottom: -3px;
+    margin-top: -2px;
+    margin-bottom: -2px;
     padding-left: 24px;
     padding-top: 23px;
     padding-bottom: 22px;
@@ -190,9 +200,13 @@ header .check-in-out {
     border-radius: 8px;
 }
 
+input.check-in-out:focus {
+    border: 3px solid #F5BD41;
+}
+
 header .preference {
-    margin-top: -3px;
-    margin-bottom: -3px;
+    /*margin-top: -3px;*/
+    /*margin-bottom: -3px;*/
     padding-left: 24px;
     padding-top: 22px;
     padding-bottom: 21px;
@@ -202,8 +216,9 @@ header .preference {
 }
 
 
-
-input:focus {
+input.preference:focus {
+    margin-top: -2px;
+    margin-bottom: -2px;
     border: 3px solid #F5BD41;
 }
 
