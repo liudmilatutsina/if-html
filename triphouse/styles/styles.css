@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+:focus-visible {
+    outline: none;
+}
+
 .text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -45,16 +49,37 @@ header .stays{
     align-items: center;
 }
 
+
 header .stays hr {
     width: 50px;
     height: 0;
+    opacity: 0;
+}
 
-    border: 2px solid #f5bd41;
+header .stays:hover hr{
+    opacity: 100%;
+    border: 3px solid #F5BD41;
 }
 
 header .attractions {
     padding-top: 6px;
     padding-left: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .attractions hr {
+    width: 100px;
+    height: 0;
+    opacity: 0;
+}
+
+header .attractions:hover hr{
+    opacity: 100%;
+    border: 3px solid #F5BD41;
 }
 
 header .text {
@@ -67,8 +92,12 @@ header .text {
 }
 
 header .day-night-switcher {
-    padding-top: 6px;
-    padding-left: 48px;
+    margin-top: 6px;
+    margin-left: 48px;
+}
+
+header .day-night-switcher:hover img{
+    background: url("../images/png/day-night-switcher:hover.png");
 }
 
 header .account-icon {
@@ -96,7 +125,6 @@ header .search-block .text-block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 128px;
     padding-right: 672px;
 }
 
@@ -110,52 +138,98 @@ header .search-text{
     color: #ffffff;
 }
 
+header .destination-text {
+    margin-left: 128px;
+    width: 443px;
+    text-align: left;
+}
+
+header .check-in-out-text {
+    text-align: left;
+    width: 259px;
+}
+
+header .input-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+
+    color: #383838;
+}
+
 header .form {
     display: flex;
     flex-direction: row;
     margin-left: 104px;
     margin-right: 113px;
     margin-top: 24px;
-    width: 1223px;
+    max-width: 1223px;
     height: 58px;
     border-radius: 8px;
-    border: 3px solid #Ffffff;
-    background-color: white;
+    border: 3px solid #ffffff;
+    background-color: #ffffff;
 }
 
-
 header .destination {
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-left: -3px;
     padding-left: 24px;
     padding-top: 22px;
     padding-bottom: 21px;
     width: 467px;
-    /*border-bottom-left-radius: 8px;*/
-    /*border-top-left-radius: 8px;*/
-    border: 0;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
 }
 
 header .check-in-out {
+    margin-top: -3px;
+    margin-bottom: -3px;
     padding-left: 24px;
     padding-top: 23px;
     padding-bottom: 22px;
     width: 259px;
-    border: 3px solid #F5BD41;
+    border: 1px solid #cecece;
     border-radius: 8px;
 }
 
 header .preference {
+    margin-top: -3px;
+    margin-bottom: -3px;
     padding-left: 24px;
     padding-top: 22px;
     padding-bottom: 21px;
     width: 305px;
-    border: 0;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+
+
+input:focus {
+    border: 3px solid #F5BD41;
 }
 
 header button {
-    width: 192px;
-    background: #3077C6;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-right: -3px;
+    width: 193px;
+    background-color: #3077C6;
     border-radius: 8px;
+    border: 1px solid #3077C6;
 }
+
+header .button-search-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
 .advantages-block {
     display: flex;
     flex-direction: column;

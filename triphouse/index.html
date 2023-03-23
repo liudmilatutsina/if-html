@@ -18,7 +18,9 @@
             Stays
             <hr />
           </div>
-          <div class="attractions text">Attractions</div>
+          <div class="attractions text">Attractions
+            <hr />
+          </div>
           <div class="day-night-switcher">
             <a href="">
               <img
@@ -37,15 +39,19 @@
       <div class="text title">Discover stays<br>
         to live, work or just relax</div>
       <div class="search-block">
-        <div class="text-block">
-          <p class="text search-text">Your destination or hotel name</p>
-          <p class="text search-text">Check-in — Check-out</p>
+      <div class="text-block">
+        <label for="destination" class="text search-text destination-text">
+          Your destination or hotel name
+        </label>
+        <label for="check-in-out" class="text search-text check-in-out-text">
+          Check-in — Check-out
+        </label>
         </div>
         <div class="form">
-          <input class="destination" placeholder="New York">
-          <input class="check-in-out" placeholder="Tue 15 Sept — Sat 19 Sept">
-          <input class="preference" placeholder="2 Adults — 0 Children — 1 Room">
-          <button>Search</button>
+          <input id="destination" class="destination text input-text" placeholder="New York">
+          <input id="check-in-out" class="check-in-out text input-text" placeholder="Tue 15 Sept — Sat 19 Sept">
+          <input class="preference text input-text" placeholder="2 Adults — 0 Children — 1 Room">
+          <button class="text button-search-text">Search</button>
         </div>
       </div>
       <div class="apps"></div>
