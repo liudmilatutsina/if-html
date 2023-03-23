@@ -96,10 +96,6 @@ header .day-night-switcher {
     margin-left: 48px;
 }
 
-header .day-night-switcher:hover img{
-    background: url("../images/png/day-night-switcher:hover.png");
-}
-
 header .account-icon {
     padding-left: 24px;
 }
