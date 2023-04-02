@@ -275,7 +275,8 @@
 
 .content__advantages--title-txt {
   margin-top: 120px;
-
+  margin-bottom: 20px;
+  text-align: center;
   width: 306px;
   height: 47px;
 
@@ -287,7 +288,7 @@
 }
 
 .content__advantages--title-hr {
-  margin-top: 20px;
+  margin: 0 auto;
   width: 100px;
   height: 4px;
   background: #f5bd41;
@@ -321,6 +322,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
 
   color: #383838;
 }
@@ -453,14 +455,83 @@
     width: calc(var(--col-width) * 14);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
+  :root {
+    --col-width: calc(100% / 12);
+  }
+
+  /*[class*="col-"] {*/
+  /*  width: 50%;*/
+  /*}*/
+
+  .col-tab-1 {
+    width: var(--col-width);
+  }
+
+  .col-tab-2 {
+    width: calc(var(--col-width) * 2);
+  }
+
+  .col-tab-3 {
+    width: calc(var(--col-width) * 3);
+  }
+
+  .col-tab-4 {
+    width: calc(var(--col-width) * 4);
+  }
+
+  .col-tab-5 {
+    width: calc(var(--col-width) * 5);
+  }
+
+  .col-tab-6 {
+    width: calc(var(--col-width) * 6);
+  }
+
+  .col-tab-7 {
+    width: calc(var(--col-width) * 7);
+  }
+
+  .col-tab-8 {
+    width: calc(var(--col-width) * 8);
+  }
+
+  .col-tab-9 {
+    width: calc(var(--col-width) * 9);
+  }
+
+  .col-tab-10 {
+    width: calc(var(--col-width) * 10);
+  }
+
+  .col-tab-11 {
+    width: calc(var(--col-width) * 11);
+  }
+
+  .col-tab-12 {
+    width: calc(var(--col-width) * 12);
+  }
+
+  .content__advantages--offers {
+    gap: 42px;
+  }
+
+  .content__advantages--offer-txt {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+
+}
+
+@media (max-width: 584px) {
   :root{
     --col-width: calc(100% / 6);
   }
 
-  [class*="col-"]{
-    width: 100%;
-  }
+  /*[class*="col-"]{*/
+  /*  width: 100%;*/
+  /*}*/
 
   .content__advantages--title-txt {
     width: 214px;
@@ -477,23 +548,24 @@
 
   .content__advantages--offers {
     margin-top: 32px;
+    margin-bottom: 40px;
     gap: 32px;
-  }
-
-  .content__advantages--offer {
-    width: 214px;
-    height: 104px;
 
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
   }
 
+  .content__advantages--offer {
+    width: 214px;
+    height: 104px;
+  }
+
   .content__advantages--offer-txt {
     font-size: 15px;
     line-height: 18px;
   }
-  .content__advantages--offers img{
+  .content__advantages--offer-img{
     width: 70px;
     height: 70px;
   }
