@@ -390,7 +390,7 @@
 
 .footer__categories--mark {
   width: 100%;
-  margin-top: 158px;
+  margin-top: 64px;
 
   font-weight: 400;
   font-size: 14px;
@@ -401,9 +401,13 @@
   align-items: start;
 }
 
-.footer__top--logo {
+.footer__top {
   width: 0;
   height: 0;
+}
+
+.footer__top--logo {
+  visibility: hidden;
 }
 
 .col-1 {
@@ -529,6 +533,8 @@
   }
 
   .footer__top {
+    width: 98px;
+    height: 23px;
     margin: 40px auto;
   }
 
