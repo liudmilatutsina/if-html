@@ -6,7 +6,7 @@
 }
 
 :root {
-    --col-width: calc(100% / 14);
+  --col-width: calc(100% / 14);
 }
 
 :focus-visible {
@@ -42,7 +42,7 @@
 .header__top--logo {
   width: 205px;
   height: 40px;
-  fill: #3077C6;
+  fill: #3077c6;
 }
 
 .header__top--container-stays {
@@ -341,7 +341,6 @@
   justify-content: space-around;
 }
 
-
 .footer__categories--about {
   width: 33%;
   height: 211px;
@@ -352,7 +351,7 @@
 }
 
 .footer__categories--types {
-    width: 33%;
+  width: 33%;
   height: 305px;
 
   display: flex;
@@ -361,7 +360,7 @@
 }
 
 .footer__categories--support {
-    width: 33%;
+  width: 33%;
   height: 117px;
 
   display: flex;
@@ -411,61 +410,60 @@
   visibility: hidden;
 }
 
-
 .col-1 {
-    width: var(--col-width);
+  width: var(--col-width);
 }
 
 .col-2 {
-    width: calc(var(--col-width) * 2);
+  width: calc(var(--col-width) * 2);
 }
 
 .col-3 {
-    width: calc(var(--col-width) * 3);
+  width: calc(var(--col-width) * 3);
 }
 
 .col-4 {
-    width: calc(var(--col-width) * 4);
+  width: calc(var(--col-width) * 4);
 }
 
 .col-5 {
-    width: calc(var(--col-width) * 5);
+  width: calc(var(--col-width) * 5);
 }
 
 .col-6 {
-    width: calc(var(--col-width) * 6);
+  width: calc(var(--col-width) * 6);
 }
 
 .col-7 {
-    width: calc(var(--col-width) * 7);
+  width: calc(var(--col-width) * 7);
 }
 
 .col-8 {
-    width: calc(var(--col-width) * 8);
+  width: calc(var(--col-width) * 8);
 }
 
 .col-9 {
-    width: calc(var(--col-width) * 9);
+  width: calc(var(--col-width) * 9);
 }
 
 .col-10 {
-    width: calc(var(--col-width) * 10);
+  width: calc(var(--col-width) * 10);
 }
 
 .col-11 {
-    width: calc(var(--col-width) * 11);
+  width: calc(var(--col-width) * 11);
 }
 
 .col-12 {
-    width: calc(var(--col-width) * 12);
+  width: calc(var(--col-width) * 12);
 }
 
 .col-13 {
-    width: calc(var(--col-width) * 13);
+  width: calc(var(--col-width) * 13);
 }
 
 .col-14 {
-    width: calc(var(--col-width) * 14);
+  width: calc(var(--col-width) * 14);
 }
 
 @media (max-width: 1090px) {
@@ -583,11 +581,10 @@
     line-height: 14px;
     text-align: center;
   }
-
 }
 
 @media (max-width: 584px) {
-  :root{
+  :root {
     --col-width: calc(100% / 6);
   }
 
@@ -627,7 +624,7 @@
     font-size: 15px;
     line-height: 18px;
   }
-  .content__advantages--offer-img{
+  .content__advantages--offer-img {
     width: 70px;
     height: 70px;
   }
@@ -655,5 +652,4 @@
   .col-mob-6 {
     width: calc(var(--col-width) * 6);
   }
-
 }
