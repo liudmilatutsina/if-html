@@ -42,6 +42,7 @@
 .header__top--logo {
   width: 205px;
   height: 40px;
+  fill: #3077C6;
 }
 
 .header__top--container-stays {
@@ -410,6 +411,7 @@
   visibility: hidden;
 }
 
+
 .col-1 {
     width: var(--col-width);
 }
@@ -542,6 +544,7 @@
     width: 98px;
     height: 19px;
     visibility: initial;
+    fill: #ffffff;
   }
 
   .footer__categories {
