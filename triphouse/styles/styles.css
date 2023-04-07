@@ -3,6 +3,10 @@
 * {
   box-sizing: border-box;
   margin: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-decoration: none;
 }
 
 :root {
@@ -13,17 +17,17 @@
   outline: none;
 }
 
-.txt {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  text-decoration: none;
+.container {
+  padding-left: var(--col-width);
+  padding-right: var(--col-width);
 }
 
 .header {
+  padding-top: 51px;
+  padding-bottom: 120px;
   min-height: 100vh;
   background: url("../images/svg/top-section-background.svg") no-repeat;
   background-size: cover;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,10 +37,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 51px;
-  height: 97px;
-  padding-left: 104px;
-  padding-right: 104px;
+
 }
 
 .header__top--logo {
@@ -45,50 +46,34 @@
   fill: #3077c6;
 }
 
-.header__top--container-stays {
-  height: 46px;
-  padding-top: 6px;
-
+.header__top--container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 46px;
   align-items: center;
 }
 
-.header__top--container-stays-hr {
-  width: 50px;
-  height: 0;
-  opacity: 0;
+.header__top--container-stays {
+  height: 100%;
+  padding-top: 6px;
+  border-bottom: 4px solid transparent;
 }
 
-.header__top--container-stays:hover .header__top--container-stays-hr {
-  opacity: 100%;
-  border: 3px solid #f5bd41;
+.header__top--container-stays:hover {
+  border-bottom-color: #f5bd41;
 }
 
 .header__top--container-attractions {
+  height: 100%;
+  margin-left: 24px;
   padding-top: 6px;
-  padding-left: 24px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  border-bottom: 4px solid transparent;
 }
 
-.header__top--container-attractions-hr {
-  width: 100px;
-  height: 0;
-  opacity: 0;
-}
-
-.header__top--container-attractions:hover .header__top--container-attractions-hr {
-  opacity: 100%;
-  border: 3px solid #f5bd41;
+.header__top--container-attractions:hover {
+  border-bottom-color: #f5bd41;
 }
 
 .header__top--container-day-night-switcher {
-  margin-top: 6px;
   margin-left: 48px;
   width: 30px;
   height: 30px;
@@ -248,7 +233,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 120px;
 }
 
 .header__apps--google {
