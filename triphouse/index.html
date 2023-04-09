@@ -342,10 +342,10 @@
           </a>
           <div class="header__top--container">
             <div class="header__top--container-stays">
-              <a class="header__top--container-txt txt" href="">Stays</a>
+              <a class="header__top--container-txt" href="">Stays</a>
             </div>
             <div class="header__top--container-attractions">
-              <a class="header__top--container-txt txt" href="">Attractions</a>
+              <a class="header__top--container-txt" href="">Attractions</a>
             </div>
             <a href="">
               <svg class="header__top--container-day-night-switcher">
@@ -359,7 +359,7 @@
             </a>
           </div>
         </div>
-        <div class="header__title txt">
+        <div class="header__title">
           Discover stays<br />
           to live, work or just relax
         </div>
@@ -367,13 +367,13 @@
           <div class="header__search--labels">
             <label
                     for="destination"
-                    class="txt header__search--label header__search--label-destination"
+                    class="header__search--label-destination"
             >
               Your destination or hotel name
             </label>
             <label
-                    for="check-in-out"
-                    class="txt header__search--label header__search--label-check-in-out"
+                    for="check-in"
+                    class="header__search--label-check-in"
             >
               Check-in — Check-out
             </label>
@@ -381,19 +381,39 @@
           <div class="header__search--form">
             <input
                     id="destination"
-                    class="txt header__search--form__input-destination header__search--form__input-txt"
+                    class="header__search--form__input-destination header__search--form__input-txt"
                     placeholder="New York"
             />
-            <input
-                    id="check-in-out"
-                    class="txt header__search--form__input-check-in-out header__search--form__input-txt"
-                    placeholder="Tue 15 Sept — Sat 19 Sept"
-            />
-            <input
-                    class="txt header__search--form__input-preference header__search--form__input-txt"
-                    placeholder="2 Adults — 0 Children — 1 Room"
-            />
-            <button class="txt header__search--form__button">Search</button>
+            <div class="header__search--form__input-check-in-out">
+              <input
+                      id="check-in"
+                      class="header__search--form__input-check-in header__search--form__input-txt"
+                      placeholder="Tue 15 Sept — "
+              />
+              <input
+                      id="check-out"
+                      class="header__search--form__input-check-out header__search--form__input-txt"
+                      placeholder="Sat 19 Sept"
+              />
+
+            </div>
+            <div class="header__search--form__input-preference">
+              <input
+                      class="header__search--form__input-adults header__search--form__input-txt"
+                      placeholder="2 Adults — "
+              />
+
+              <input
+                      class="header__search--form__input-children header__search--form__input-txt"
+                      placeholder="0 Children — "
+              />
+
+              <input
+                      class="header__search--form__input-rooms header__search--form__input-txt"
+                      placeholder="1 Room"
+              />
+            </div>
+            <button class="header__search--form__button">Search</button>
           </div>
         </div>
         <div class="header__apps">
