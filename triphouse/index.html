@@ -52,6 +52,9 @@
           fill="white"
         />
       </symbol>
+      <symbol id="burger-svg" viewBox="0 0 24 16">
+        <path d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z" fill="white"/>
+      </symbol>
       <symbol id="google-app-svg" viewBox="0 0 135 40">
         <path
           d="M130 39.9999H5C2.25 39.9999 0 37.75 0 35V4.99999C0 2.25 2.25 0 5 0H130C132.75 0 135 2.25 135 4.99999V35C135 37.75 132.75 39.9999 130 39.9999Z"
@@ -329,6 +332,9 @@
           fill="#3077C6"
         />
       </symbol>
+      <symbol id="magnifier-svg" viewBox="0 0 16 16">
+        <path d="M11.4351 10.0629H10.7124L10.4563 9.81589C11.3528 8.77301 11.8925 7.4191 11.8925 5.94625C11.8925 2.66209 9.23042 0 5.94625 0C2.66209 0 0 2.66209 0 5.94625C0 9.23042 2.66209 11.8925 5.94625 11.8925C7.4191 11.8925 8.77301 11.3528 9.81589 10.4563L10.0629 10.7124V11.4351L14.6369 16L16 14.6369L11.4351 10.0629ZM5.94625 10.0629C3.66838 10.0629 1.82962 8.22413 1.82962 5.94625C1.82962 3.66838 3.66838 1.82962 5.94625 1.82962C8.22413 1.82962 10.0629 3.66838 10.0629 5.94625C10.0629 8.22413 8.22413 10.0629 5.94625 10.0629Z" fill="#BFBFBF"/>
+      </symbol>
     </svg>
       <header class="header container">
         <div class="header__top">
@@ -354,6 +360,11 @@
                 <use href="#account-svg"></use>
               </svg>
             </a>
+            <a href="">
+              <svg class="header__top--container-burger">
+                <use href="#burger-svg"></use>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="header__title">
@@ -369,46 +380,76 @@
               Your destination or hotel name
             </label>
             <label
-                    for="check-in"
+                    for="check-in-out"
                     class="header__search--label-check-in"
             >
               Check-in — Check-out
             </label>
           </div>
-          <div class="header__search--form">
-            <input
-                    id="destination"
-                    class="header__search--form__input-destination header__search--form__input-txt"
-                    placeholder="New York"
+          <div class="header__search--form col-mob-6">
+            <input class="header__search--form__destination header__search--form__input-txt"
+                   id="destination"
+                   placeholder="New York"
             />
-            <div class="header__search--form__input-check-in-out">
+            <div class="header__search--form__destination-mob">
+              <svg class="header__search--form__destination-mob-svg">
+                <use href="#magnifier-svg"></use>
+              </svg>
               <input
-                      id="check-in"
-                      class="header__search--form__input-check-in header__search--form__input-txt"
-                      placeholder="Tue 15 Sept — "
+                      id="destination_mob"
+                      class="header__search--form__destination-mob-input header__search--form__input-txt"
+                      placeholder="Your destination or hotel name"
               />
-              <input
-                      id="check-out"
-                      class="header__search--form__input-check-out header__search--form__input-txt"
-                      placeholder="Sat 19 Sept"
-              />
-
             </div>
-            <div class="header__search--form__input-preference">
-              <input
-                      class="header__search--form__input-adults header__search--form__input-txt"
-                      placeholder="2 Adults — "
-              />
 
+            <input class="header__search--form__check-in-out header__search--form__input-txt"
+                   id="check-in-out"
+                   placeholder="Tue 15 Sept — Sat 19 Sept"
+            />
+            <div class="header__search--form__check-in-mob">
+              <label for="check-in-mob" class="header__search--form__label">Check-in date</label>
               <input
-                      class="header__search--form__input-children header__search--form__input-txt"
-                      placeholder="0 Children — "
+                      id="check-in-mob"
+                      class="header__search--form__check-in-mob-input header__search--form__input-txt"
+                      placeholder="Tue 15 Sept 2020"
               />
+            </div>
+            <div class="header__search--form__check-out-mob">
+              <label for="check-out-mob" class="header__search--form__label">Check-out date</label>
+              <input
+                      id="check-out-mob"
+                      class="header__search--form__check-out-mob-input header__search--form__input-txt"
+                      placeholder="Sat 19 Sept 2020"
+              />
+            </div>
 
-              <input
-                      class="header__search--form__input-rooms header__search--form__input-txt"
-                      placeholder="1 Room"
-              />
+            <input class="header__search--form__preference header__search--form__input-txt"
+                   placeholder="2 Adults — 0 Children — 1 Room"
+            />
+            <div class="header__search--form__preference-mob">
+              <div class="header__search--form__preference-mob-adults">
+                <label for="adults" class="header__search--form__label adults-label">Adults</label>
+                <input
+                        id="adults"
+                        class="header__search--form__preference-mob-adults-input header__search--form__input-txt"
+                        placeholder="2"
+                />
+              </div>
+              <div class="header__search--form__preference-mob-children">
+                <label for="children" class="header__search--form__label children-label">Children</label>
+                <input
+                        id="children"
+                        class="header__search--form__preference-mob-children-input header__search--form__input-txt"
+                        placeholder="0"
+                />
+              </div>
+              <div class="header__search--form__preference-mob-rooms">
+                <label for="rooms" class="header__search--form__label">Rooms</label>
+                <input id="rooms"
+                      class="header__search--form__preference-mob-rooms-input header__search--form__input-txt"
+                      placeholder="1"
+                 />
+              </div>
             </div>
             <button class="header__search--form__button">Search</button>
           </div>

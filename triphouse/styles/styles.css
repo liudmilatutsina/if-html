@@ -17,6 +17,13 @@
   outline: none;
 }
 
+::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #383838;
+}
+
 .container {
   padding-left: var(--col-width);
   padding-right: var(--col-width);
@@ -48,7 +55,6 @@
 
 .header__top--container {
   display: flex;
-  height: 46px;
   align-items: center;
 }
 
@@ -94,6 +100,10 @@
   color: #ffffff;
 }
 
+.header__top--container-burger {
+  display: none;
+}
+
 .header__title {
   text-align: left;
 
@@ -137,6 +147,22 @@
   background-color: #ffffff;
 }
 
+.header__search--form__destination-mob {
+  display: none;
+}
+
+.header__search--form__check-in-mob {
+  display: none;
+}
+
+.header__search--form__check-out-mob {
+  display: none;
+}
+
+.header__search--form__preference-mob {
+  display: none;
+}
+
 .header__search--form__input-txt {
   font-weight: 400;
   font-size: 18px;
@@ -146,7 +172,7 @@
   color: #383838;
 }
 
-.header__search--form__input-destination {
+.header__search--form__destination {
   width: 35%;
   padding-left: 24px;
   margin-left: -3px;
@@ -154,14 +180,14 @@
   border-radius: 8px;
 }
 
-.header__search--form__input-destination:focus {
+.header__search--form__destination:focus {
   margin-top: -3px;
   margin-bottom: -3px;
   padding-left: 22px;
   border: 3px solid #f5bd41;
 }
 
-.header__search--form__input-check-in-out {
+.header__search--form__check-in-out {
   padding-left: 24px;
   margin-top: -3px;
   margin-bottom: -3px;
@@ -169,51 +195,21 @@
   width: 22%;
   border: 1px solid #cecece;
   border-radius: 8px;
-
-  display: flex;
 }
 
-.header__search--form__input-check-in {
-  border-radius: 8px;
-  width: 124px;
-  border: 0;
-}
-
-.header__search--form__input-check-out {
-  border-radius: 8px;
-  width: 110px;
-  border: 0;
-}
-
-.header__search--form__input-check-in-out:focus-within{
+.header__search--form__check-in-out:focus{
   border: 3px solid #f5bd41;
   padding-left: 22px;
 }
 
-.header__search--form__input-preference {
+.header__search--form__preference {
   padding-left: 24px;
   width: 28%;
   border: 1px solid #ffffff;
   border-radius: 8px;
-  display: flex;
 }
 
-.header__search--form__input-adults {
-  border: 0;
-  width: 92px;
-}
-
-.header__search--form__input-children {
-  border: 0;
-  width: 108px;
-}
-
-.header__search--form__input-rooms {
-  border: 0;
-  width: 70px;
-}
-
-.header__search--form__input-preference:focus-within {
+.header__search--form__preference:focus {
   margin-top: -3px;
   margin-bottom: -3px;
   padding-left: 22px;
@@ -565,7 +561,7 @@
   }
 
   .footer__categories--txt {
-    visibility: hidden;
+    display: none;
   }
 
   .footer__categories--mark {
@@ -576,6 +572,7 @@
     line-height: 14px;
     text-align: center;
   }
+
 }
 
 @media (max-width: 584px) {
@@ -583,14 +580,221 @@
     --col-width: calc(100% / 6);
   }
 
+  .header__top--container-stays {
+    display: none;
+  }
+
+  .header__top--container-attractions {
+    display: none;
+  }
+
+  .header__search--labels {
+    display: none;
+  }
+
+  .header__search--form__destination {
+    display: none;
+  }
+
+  .header__search--form__check-in-out {
+    display: none;
+  }
+
+  .header__search--form__preference {
+    display: none;
+  }
+
+  .content__advantages--title-hr {
+    display: none;
+  }
+
   .container {
     padding-left: 17px;
     padding-right: 17px;
   }
 
-  /*[class*="col-"]{*/
-  /*  width: 100%;*/
-  /*}*/
+  .header {
+    padding-top: 12px;
+    padding-bottom: 40px;
+  }
+
+  .header__top--logo {
+    width: 122px;
+    height: 24px;
+  }
+
+  .header__top--container {
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .header__top--container-account {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__top--container-day-night-switcher {
+    margin: 0 auto;
+    width: 16px;
+    height: 16px;
+  }
+
+  .header__top--container-burger {
+    display: initial;
+    width: 24px;
+    height: 16px;
+  }
+
+  .header__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .header__search--form {
+    border-radius: 0;
+    border: 8px solid #F5BD41;
+    display: grid;
+    gap: 8px;
+    background-color: #F5BD41;
+    height: auto;
+  }
+
+  .header__search--form__destination-mob {
+    height: 48px;
+    border-radius: 4px;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__search--form__destination-mob-svg {
+    margin-left: 12px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .header__search--form__destination-mob-input {
+    border-radius: 4px;
+    padding-left: 8px;
+    width: 100%;
+    border: 0;
+  }
+
+  .header__search--form__check-in-mob {
+    padding-left: 8px;
+    height: 48px;
+    border-radius: 4px;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .header__search--form__check-in-mob-input {
+    border: 0;
+  }
+
+  .header__search--form__check-out-mob-input {
+    border: 0;
+  }
+
+  .header__search--form__check-out-mob {
+    padding-left: 8px;
+    height: 48px;
+    border-radius: 4px;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .header__search--form__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #383838;
+  }
+
+  .header__search--form__preference-mob {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: white;
+    border-radius: 4px;
+    padding-left: 4px;
+  }
+
+  .header__search--form__preference-mob-adults{
+    height: 48px;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 4px;
+    width: 33.33%;
+  }
+
+  .header__search--form__preference-mob-adults-input {
+    border: 0;
+    width: 100%;
+    border-right: 1px solid #BFBFBF;
+  }
+
+  .header__search--form__preference-mob-children{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 4px;
+    width: 33.33%;
+  }
+
+  .header__search--form__preference-mob-children-input {
+    border: 0;
+    width: 100%;
+    border-right: 1px solid #BFBFBF;
+  }
+
+  .adults-label {
+    border-right: 1px solid #BFBFBF;
+  }
+
+  .children-label {
+    border-right: 1px solid #BFBFBF;
+    width: 100%;
+  }
+
+  .header__search--form__preference-mob-rooms{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 4px;
+    width: 33.33%;
+  }
+
+  .header__search--form__preference-mob-rooms-input {
+    border: 0;
+  }
+
+  .header__search--form__button {
+    margin: 0 auto;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 48px;
+
+    font-size: 19px;
+    line-height: 22px;
+  }
 
   .content__advantages--title-txt {
     width: 214px;
@@ -599,10 +803,6 @@
     margin-top: 24px;
     font-size: 28px;
     line-height: 33px;
-  }
-
-  .content__advantages--title-hr {
-    visibility: hidden;
   }
 
   .content__advantages--offers {
@@ -624,6 +824,7 @@
     font-size: 15px;
     line-height: 18px;
   }
+
   .content__advantages--offer-img {
     width: 70px;
     height: 70px;
