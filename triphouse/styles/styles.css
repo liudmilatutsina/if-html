@@ -655,6 +655,7 @@
     border-radius: 0;
     border: 8px solid #F5BD41;
     display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 8px;
     background-color: #F5BD41;
     height: auto;
