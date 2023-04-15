@@ -329,6 +329,64 @@
   color: #383838;
 }
 
+.content__guests {
+  height: 828px;
+  background-color: #EAF0F9;
+  padding: 120px var(--col-width);
+
+  display: flex;
+  flex-direction: column;
+  gap: 104px;
+}
+
+.content__guests--title {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
+}
+
+.content__guests--homes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.content__guests--home {
+  width: 296px;
+  height: 404px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.apartment {
+  height: 432px;
+}
+
+.content__guests--home-img {
+  width: 296px;
+  height: 296px;
+}
+
+.content__guests--home-name {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #3077C6;
+}
+
+.content__guests--home-location {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #BFBFBF;
+}
+
 .footer {
   background-color: #10367c;
   display: flex;
