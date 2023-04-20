@@ -318,6 +318,138 @@
   color: #383838;
 }
 
+.sign-up--mob {
+  display: none;
+}
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  padding: 120px var(--col-width);
+}
+
+.destinations--title {
+  margin: 0 auto;
+  padding-bottom: 104px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+
+  color: #383838;
+}
+
+.destinations--buttons {
+  width: 623px;
+  height: 64px;
+
+  display: flex;
+  background-color: #F3F3F4;
+  border-radius: 8px;
+}
+
+.destinations--button {
+  width: 33.33%;
+  height: 64px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #383838;
+  background-color: #F3F3F4;
+  border-radius: 8px;
+  border: 0;
+}
+
+.destinations--button:focus {
+  color: #FFFFFF;
+  background-color: #3077C6;;
+}
+
+.destinations--pictures {
+  padding-top: 64px;
+  padding-bottom: 49px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.destinations--picture--block {
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.destinations--picture {
+  width: 296px;
+  height: 296px;
+}
+
+.destinations--name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #3077C6;
+}
+
+.destinations--button--down--block {
+  margin: 0 auto
+}
+
+.destinations--button--down {
+  border-radius: 50%;
+  border: 0;
+  height: 40px;
+  width: 40px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sign-up--web {
+  margin: 0 var(--col-width);
+  height: 200px;
+  background-color: #EAF0F9;
+
+  display: flex;
+  align-items: center;
+}
+
+.sign-up--web--svg {
+  padding: 0 24px;
+}
+
+.sign-up--web--details {
+  padding: 51px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sign-up--web--details--title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.sign-up--web--details--button {
+  width: 128px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #3077C6;
+}
+
 .footer {
   background-color: #10367c;
   display: flex;
@@ -454,6 +586,12 @@
   width: calc(var(--col-width) * 14);
 }
 
+@media (max-width: 1410px) {
+  .island--picture--block {
+    display: none;
+  }
+}
+
 @media (max-width: 1090px) {
   :root {
     --col-width: calc(100% / 12);
@@ -520,6 +658,10 @@
     line-height: 20px;
   }
 
+  .norway--picture--block {
+    display: none;
+  }
+
   .footer__top {
     width: 98px;
     height: 23px;
@@ -571,6 +713,115 @@
     font-size: 12px;
     line-height: 14px;
     text-align: center;
+  }
+
+}
+
+@media (max-width: 700px) {
+  :root {
+    --col-width: calc(100% / 6);
+  }
+
+  .sign-up--web {
+    display: none;
+  }
+
+  .destinations {
+    height: 379px;
+    padding: 40px 17px;
+
+    position: relative;
+  }
+
+  .destinations--title {
+    padding-bottom: 32px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .destinations--buttons {
+    width: 100%;
+    height: 32px;
+    gap: 16px;
+    background: none;
+    border-radius: 4px;
+
+    justify-content: space-evenly;
+  }
+
+  .destinations--button {
+    height: 32px;
+    width: 98px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+
+    background: #FFFFFF;
+    border: 1px solid #F3F3F4;
+    border-radius: 4px;
+  }
+
+  .destinations--pictures {
+    padding-top: 24px;
+    padding-bottom: 0;
+
+    justify-content: space-evenly;
+  }
+
+  .destinations--picture--block {
+    height: 178px;
+  }
+
+  .norway--picture--block {
+    display: none;
+  }
+
+  .island--picture--block {
+    display: none;
+  }
+
+  .destinations--picture {
+    width: 156px;
+    height: 156px;
+  }
+
+  .destinations--name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .destinations--button--down--block {
+    position: absolute;
+    top: 60%;
+    right: 7%;
+  }
+
+  .destinations--button--down {
+    display: none;
+  }
+
+  .sign-up--mob {
+    padding: 24px 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign-up--mob--title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .sign-up--mob--install {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #3077C6;
+    border: 0;
+    background: none;
   }
 
 }
