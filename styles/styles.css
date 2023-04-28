@@ -347,7 +347,7 @@
   max-height: 404px;
 }
 
-.apartment {
+.content__guests--home--apartment {
   height: 432px;
 }
 
@@ -532,11 +532,11 @@
     --col-width: calc(100% / 12);
   }
 
-  .villa {
+  .content__guests--home--villa {
     display: none;
   }
 
-  .hostel {
+  .content__guests--home--hostel {
     display: none;
   }
 
@@ -652,7 +652,7 @@
 }
 
 @media (max-width: 740px) {
-  .villa {
+  .content__guests--home--villa {
     display: initial;
   }
 
@@ -717,7 +717,7 @@
     display: none;
   }
 
-  .villa {
+  .content__guests--home--villa {
     display: none;
   }
 
@@ -978,7 +978,7 @@
 }
 
 @media (max-width: 1440px) {
-  .hostel {
+  .content__guests--home--hostel {
     display: none;
   }
 }
