@@ -10,6 +10,7 @@
 
 :root {
   --col-width: calc(100% / 12);
+  --container-padding: 16px;
 }
 
 :focus-visible {
@@ -24,8 +25,11 @@
 }
 
 .container {
-  padding-left: 104px;
-  padding-right: 104px;
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 .header {
@@ -35,6 +39,9 @@
   padding-top: 51px;
   padding-bottom: 120px;
   min-height: 100vh;
+}
+
+.header__wrapper {
   background: url("../images/svg/top-section-background.svg") no-repeat;
   background-size: cover;
 }
@@ -314,12 +321,16 @@
   color: #383838;
 }
 
+.content__guests--wrapper {
+  background-color: #EAF0F9;
+}
+
 .content__guests {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 120px 104px;
-  background-color: #EAF0F9;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .content__guests--title {
@@ -341,7 +352,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 296px;
+  max-width: 290px;
   height: 404px;
 }
 
@@ -352,8 +363,8 @@
 .carousel {
   position: absolute;
   top: 50%;
-  left: 104px;
-  right: 104px;
+  left: var(--container-padding);
+  right: var(--container-padding);
 }
 
 .carousel-button {
@@ -380,8 +391,8 @@
 }
 
 .content__guests--home-img {
-  width: 296px;
-  height: 296px;
+  width: 290px;
+  height: 290px;
 }
 
 .content__guests--home-location,
@@ -397,8 +408,11 @@
   color: #3077C6;
 }
 
-.footer {
+.footer__wrapper {
   background-color: #10367c;
+}
+
+.footer {
   display: flex;
   flex-flow: column;
 }
@@ -511,7 +525,7 @@
   width: calc(var(--col-width) * 12);
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1230px) {
   .content__guests--home--hostel {
     display: none;
   }
@@ -526,13 +540,13 @@
     width: 50%;
   }
 
-  .content__guests--home--villa {
-    display: none;
-  }
+  /*.content__guests--home--villa {*/
+  /*  display: none;*/
+  /*}*/
 
-  .content__guests--home--hostel {
-    display: none;
-  }
+  /*.content__guests--home--hostel {*/
+  /*  display: none;*/
+  /*}*/
 
   .content__advantages--offers {
     gap: 42px;
