@@ -344,6 +344,13 @@
           fill="#BFBFBF"
         />
       </symbol>
+      <symbol id="arrow-svg" viewBox="0 0 9 21">
+        <path
+          d="M0.941176 19.8235L7.1 11.6118C7.63333 10.9007 7.63333 9.92288 7.1 9.21177L0.941176 1"
+          stroke="#383838"
+          stroke-width="2"
+        />
+      </symbol>
     </svg>
     <div class="header__wrapper">
       <header class="header container">
@@ -519,88 +526,67 @@
         </div>
       </div>
     </div>
-    <div class="content__guests--wrapper">
-      <div class="content__guests container">
-        <h2 class="content__guests--title">Homes guests loves</h2>
-        <div class="content__guests--homes">
-          <div class="content__guests--home col-3">
+    <section class="homes">
+      <div class="homes__container container flex-column">
+        <h2 class="homes__title h2-style">Homes guests loves</h2>
+        <div class="homes__items flex-row">
+          <div class="homes__item col-desktop-3 col-mobile-3">
             <img
-              class="content__guests--home-img"
+              class="homes__img"
               alt="Hotel"
               src="images/png/hotel.png"
             />
-            <p class="content__guests--home-name">Hotel Leopold</p>
-            <p class="content__guests--home-location">
+            <p class="homes__name homes__description">Hotel Leopold</p>
+            <p class="homes__location homes__description">
               Saint Petersburg, Russia
             </p>
           </div>
-          <div class="content__guests--home col-3 content__guests--home--apartment">
+          <div class="homes__item col-desktop-3 col-mobile-3">
             <img
-              class="content__guests--home-img"
+              class="homes__img"
               alt="Apartment"
               src="images/png/apartment.png"
             />
-            <p class="content__guests--home-name">Apartment Sunshine</p>
-            <p class="content__guests--home-location">
+            <p class="homes__name homes__description">Apartment Sunshine</p>
+            <p class="homes__location homes__description">
               Santa Cruz de Tenerife, Spain
             </p>
           </div>
-          <div class="content__guests--home col-3 content__guests--home--villa">
+          <div class="homes__item col-desktop-3 item-villa">
             <img
-              class="content__guests--home-img"
+              class="homes__img"
               alt="Villa"
               src="images/png/villa.png"
             />
-            <p class="content__guests--home-name">Villa Kunerad</p>
-            <p class="content__guests--home-location">
+            <p class="homes__name homes__description">Villa Kunerad</p>
+            <p class="homes__location homes__description">
               Vysokie Tatry, Slowakia
             </p>
           </div>
-          <div class="content__guests--home col-3 content__guests--home--hostel">
+          <div class="homes__item col-desktop-3 item-hostel">
             <img
-              class="content__guests--home-img content__guests--home--hostel"
+              class="homes__img"
               alt="Hostel"
               src="images/png/hostel.png"
             />
-            <p class="content__guests--home-name">Hostel Friendship</p>
-            <p class="content__guests--home-location">Berlin, Germany</p>
+            <p class="homes__name homes__description">Hostel Friendship</p>
+            <p class="homes__location homes__description">Berlin, Germany</p>
           </div>
-          <div class="carousel">
-            <button type="button" class="carousel-button button-previous">
-              <svg
-                class="slider-previous"
-                width="9"
-                height="21"
-                viewBox="0 0 9 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.941176 19.8235L7.1 11.6118C7.63333 10.9007 7.63333 9.92288 7.1 9.21177L0.941176 1"
-                  stroke="#383838"
-                  stroke-width="2"
-                />
+          <div class="slider flex-row">
+            <button type="button" class="slider__button slider__button--previous">
+              <svg fill="none" class="arrow">
+                <use href="#arrow-svg"></use>
               </svg>
             </button>
-            <button type="button" class="carousel-button button-next">
-              <svg
-                width="9"
-                height="21"
-                viewBox="0 0 9 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.941176 19.8235L7.1 11.6118C7.63333 10.9007 7.63333 9.92288 7.1 9.21177L0.941176 1"
-                  stroke="#383838"
-                  stroke-width="2"
-                />
+            <button type="button" class="slider__button slider__button--next">
+              <svg fill="none" class="arrow">
+                <use href="#arrow-svg"></use>
               </svg>
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div class="footer__wrapper">
       <footer class="footer container">
         <div class="footer__top">

@@ -4,13 +4,88 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-style: normal;
   text-decoration: none;
 }
 
 :root {
   --col-width: calc(100% / 12);
-  --container-padding: 16px;
+  --font-size: 40px;
+  --container-padding-top-bottom: 16px;
+  --container-padding-left-right: 120px;
+  --slider-button-size: 40px;
+  --color-onyx: #383838;
+  --color-argent: #BFBFBF;
+  --color-celtic-blue: #3366CC;
+}
+
+.col-desktop-1 {
+  width: var(--col-width);
+}
+
+.col-desktop-2 {
+  width: calc(var(--col-width) * 2);
+}
+
+.col-desktop-3 {
+  width: calc(var(--col-width) * 3);
+}
+
+.col-desktop-4 {
+  width: calc(var(--col-width) * 4);
+}
+
+.col-desktop-5 {
+  width: calc(var(--col-width) * 5);
+}
+
+.col-desktop-6 {
+  width: calc(var(--col-width) * 6);
+}
+
+.col-desktop-7 {
+  width: calc(var(--col-width) * 7);
+}
+
+.col-desktop-8 {
+  width: calc(var(--col-width) * 8);
+}
+
+.col-desktop-9 {
+  width: calc(var(--col-width) * 9);
+}
+
+.col-desktop-10 {
+  width: calc(var(--col-width) * 10);
+}
+
+.col-desktop-11 {
+  width: calc(var(--col-width) * 11);
+}
+
+.col-desktop-12 {
+  width: calc(var(--col-width) * 12);
+}
+
+.h2-style {
+  margin-bottom: 7.5vw;
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--font-size);
+  color: var(--color-onyx);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 :focus-visible {
@@ -25,11 +100,10 @@
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1264px;
   width: 100%;
   margin: 0 auto;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+  padding: var(--container-padding-left-right) var(--container-padding-top-bottom);
 }
 
 .header {
@@ -321,91 +395,60 @@
   color: #383838;
 }
 
-.content__guests--wrapper {
+.homes {
   background-color: #EAF0F9;
 }
 
-.content__guests {
+.homes__items {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  gap: 16px;
 }
 
-.content__guests--title {
-  margin: 0 auto;
-  padding-bottom: 105px;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  color: #383838;
+.homes__img {
+  width: 100%;
 }
 
-.content__guests--homes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.homes__description {
+  font-size: 24px;
+  color: var(--color-argent);
 }
 
-.content__guests--home {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 290px;
-  height: 404px;
+.homes__name {
+  padding: 24px 0;
+  color: var(--color-celtic-blue);
 }
 
-.content__guests--home--apartment {
-  height: 435px;
-}
-
-.carousel {
+.slider {
   position: absolute;
-  top: 50%;
-  left: var(--container-padding);
-  right: var(--container-padding);
+  width: 100%;
+  top: 30%;
 }
 
-.carousel-button {
+.slider__button {
+  width: var(--slider-button-size);
+  height: var(--slider-button-size);
   border-radius: 50%;
   border: 0;
   background: #F3F3F4;
-  width: 40px;
-  height: 40px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.button-next {
-  position: absolute;
-  right: -1%;
-}
-
-.button-previous {
-  position: absolute;
-  left: -1%;
-}
-
-.slider-previous {
+.slider__button--previous > * {
   transform: rotate(180deg);
 }
 
-.content__guests--home-img {
-  width: 290px;
-  height: 290px;
+.slider__button--previous {
+  visibility: hidden;
+  transform: translate(calc(var(--slider-button-size) / -2));
 }
 
-.content__guests--home-location,
-.content__guests--home-name {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
-  color: #BFBFBF;
+.slider__button--next {
+  transform: translate(calc(var(--slider-button-size) / 2));
 }
 
-.content__guests--home-name {
-  padding: 24px 0;
-  color: #3077C6;
+.arrow {
+  width: 9px;
+  height: 21px;
 }
 
 .footer__wrapper {
@@ -477,84 +520,75 @@
   visibility: hidden;
 }
 
-.col-1 {
-  width: var(--col-width);
-}
-
-.col-2 {
-  width: calc(var(--col-width) * 2);
-}
-
-.col-3 {
-  width: calc(var(--col-width) * 3);
-}
-
-.col-4 {
-  width: calc(var(--col-width) * 4);
-}
-
-.col-5 {
-  width: calc(var(--col-width) * 5);
-}
-
-.col-6 {
-  width: calc(var(--col-width) * 6);
-}
-
-.col-7 {
-  width: calc(var(--col-width) * 7);
-}
-
-.col-8 {
-  width: calc(var(--col-width) * 8);
-}
-
-.col-9 {
-  width: calc(var(--col-width) * 9);
-}
-
-.col-10 {
-  width: calc(var(--col-width) * 10);
-}
-
-.col-11 {
-  width: calc(var(--col-width) * 11);
-}
-
-.col-12 {
-  width: calc(var(--col-width) * 12);
-}
-
-@media (max-width: 1230px) {
-  .content__guests--home--hostel {
-    display: none;
-  }
-}
 
 @media (max-width: 1170px) {
-  :root {
-    --col-width: calc(100% / 10);
-  }
 
-  [class*="col-"] {
-    width: 50%;
-  }
-
-  /*.content__guests--home--villa {*/
-  /*  display: none;*/
-  /*}*/
-
-  /*.content__guests--home--hostel {*/
-  /*  display: none;*/
+  /*[class*="col-"] {*/
+  /*  width: 50%;*/
   /*}*/
 
   .content__advantages--offers {
     gap: 42px;
   }
-
 }
 
 @media (max-width: 1060px) {
+  :root {
+    --col-width: calc(100% / 10);
+  }
+
+  .col-tablet-1 {
+    width: var(--col-width);
+  }
+
+  .col-tablet-2 {
+    width: calc(var(--col-width) * 2);
+  }
+
+  .col-tablet-3 {
+    width: calc(var(--col-width) * 3);
+  }
+
+  .col-tablet-4 {
+    width: calc(var(--col-width) * 4);
+  }
+
+  .col-tablet-5 {
+    width: calc(var(--col-width) * 5);
+  }
+
+  .col-tablet-6 {
+    width: calc(var(--col-width) * 6);
+  }
+
+  .col-tablet-7 {
+    width: calc(var(--col-width) * 7);
+  }
+
+  .col-tablet-8 {
+    width: calc(var(--col-width) * 8);
+  }
+
+  .col-tablet-9 {
+    width: calc(var(--col-width) * 9);
+  }
+
+  .col-tablet-10 {
+    width: calc(var(--col-width) * 10);
+  }
+
+  .item-hostel {
+    display: none;
+  }
+
+  .homes__description {
+    font-size: 20px;
+  }
+
+  .homes__name {
+    padding: 20px 0;
+  }
+
   .header__search--labels {
     display: none;
   }
@@ -694,43 +728,6 @@
 }
 
 @media (max-width: 880px) {
-  .content__guests--home--villa {
-    display: initial;
-  }
-
-  .content__guests--home {
-    width: auto;
-    height: 193px;
-  }
-
-  .content__guests--title {
-    font-size: 28px;
-    line-height: 33px;
-    padding-bottom: 32px;
-  }
-
-  .content__guests--home-img {
-    max-width: 155px;
-    max-height: 155px;
-  }
-
-  .content__guests--home-name,
-  .content__guests--home-location {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .content__guests--home-name {
-    padding-top: 8px;
-    padding-bottom: 4px;
-  }
-
-
-  .carousel-button {
-    height: 28px;
-    width: 28px;
-  }
-
   .footer__top {
     width: 98px;
     height: 23px;
@@ -820,32 +817,65 @@
     font-size: 30px;
     line-height: 35px;
   }
-
-  .content__guests--home--villa {
-    display: none;
-  }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 700px) {
   :root {
     --col-width: calc(100% / 6);
+    --slider-button-size: 28px;
   }
 
-  [class*="col-"] {
-    width: 50%;
+  .col-mobile-1 {
+    width: var(--col-width);
+  }
+
+  .col-mobile-2 {
+    width: calc(var(--col-width) * 2);
+  }
+
+  .col-mobile-3 {
+    width: calc(var(--col-width) * 3);
+  }
+
+  .col-mobile-4 {
+    width: calc(var(--col-width) * 4);
+  }
+
+  .col-mobile-5 {
+    width: calc(var(--col-width) * 5);
+  }
+
+  .col-mobile-6 {
+    width: calc(var(--col-width) * 6);
   }
 
   .content__advantages--title::after {
     display: none;
   }
 
-  .content__guests {
+  .container {
     padding: 40px 17px;
   }
 
-  .container {
-    padding-left: 17px;
-    padding-right: 17px;
+  .h2-style {
+    font-size: calc(var(--font-size) - 75%);
+  }
+
+  .arrow {
+    width: 6px;
+    height: 15px;
+  }
+
+  .item-villa {
+    display: none;
+  }
+
+  .homes__description {
+    font-size: 12px;
+  }
+
+  .homes__name {
+    padding: 12px 0;
   }
 
   .content__advantages--offer-txt {
@@ -885,13 +915,4 @@
     height: 70px;
   }
 
-  .carousel-button {
-    height: 28px;
-    width: 28px;
-  }
-
-  .carousel {
-    left: 2%;
-    right: 2%;
-  }
 }
