@@ -32,6 +32,8 @@
   --color-onyx: #383838;
   --color-argent: #BFBFBF;
   --color-anti-flash-white: #F4F4F3;
+  --color-anti-flash-white2: #EAF0F9;
+  --color-catalina-blue: #10367C;
   --color-celtic-blue: #3366CC;
   --color-celtic-blue2: #3077c6;
   --color-maximum-yellow-red: #f5bd41;
@@ -91,6 +93,7 @@ button {
 }
 
 .h2-style {
+  position: relative;
   margin-bottom: 104px;
   text-align: center;
   font-weight: 500;
@@ -118,7 +121,7 @@ button {
 }
 
 .top-section {
-  background: url("../images/svg/top-section-background.svg") no-repeat center;
+  background: url("../images/png/top-section-background.png") no-repeat center;
   background-size: cover;
   min-height: 100vh;
 }
@@ -187,6 +190,7 @@ button {
 .top-section__title {
   margin-top: 196px;
   text-align: left;
+  font-weight: 500;
   font-size: 50px;
   color: var(--color-white);
 }
@@ -277,19 +281,20 @@ button {
   height: 40px;
 }
 
-.advantages__title {
-  position: relative;
-}
-
-.advantages__title::after {
+.h2-style::after {
   content: "";
   position: absolute;
-  width: 100px;
+  width: 0;
   height: 4px;
   background: var(--color-maximum-yellow-red);
   bottom: -50%;
   left: 50%;
   transform: translate(-50%);
+  transition: width 0.4s ease-out;
+}
+
+.h2-style:hover::after {
+  width: 100px;
 }
 
 .advantages__items {
@@ -309,7 +314,7 @@ button {
 
 /*Homes block styles*/
 .homes {
-  background-color: #EAF0F9;
+  background-color: var(--color-anti-flash-white2);
 }
 
 .homes__items {
@@ -359,7 +364,8 @@ button {
   transform: translate(calc(var(--slider-button-size) / 2));
 }
 
-.destination__slider {
+.destinations__slider {
+  position: initial;
   width: 0;
   height: 0;
 }
@@ -385,7 +391,7 @@ button {
 }
 
 .destinations {
-  padding-bottom: 208px;
+  padding-bottom: 90px;
 }
 
 .destinations__buttons {
@@ -460,13 +466,136 @@ button {
   justify-content: initial;
 }
 
+/*Reviews block*/
+
+.reviews__items {
+  position: relative;
+}
+
+.reviews__item {
+  max-width: 400px;
+  background: var(--color-anti-flash-white2);
+}
+
+.item__img {
+  position: relative;
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.img-price {
+  position: absolute;
+  top: 100%;
+  height: 48px;
+  width: 100%;
+  padding: 16px 0 11px 24px;
+  background: rgba(56, 56, 56, 0.7);
+  opacity: 80%;
+  transition: transform 300ms ease;
+  transform: translateY(0);
+}
+
+.img-price p {
+  font-size: 18px;
+  color: var(--color-white);
+}
+
+.reviews__item:hover .img-price {
+  transform: translate(0, -100%);
+}
+
+.review--location-grade {
+  padding: 0 0 24px 0;
+}
+
+.review--location {
+  width: 65%;
+}
+
+.review--grade {
+  align-items: end;
+  width: 35%;
+}
+
+.location--hotel,
+.location--name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #3077C6;
+}
+
+.location--name {
+  padding-top: 16px;
+  font-weight: 400;
+}
+
+.review--grade div {
+  padding: 4px 11px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-anti-flash-white2);
+  border-radius: 8px;
+  background: var(--color-catalina-blue);
+}
+
+.review--grade p {
+  font-size: 14px;
+  color: var(--color-argent);
+}
+
+.review--reviewer {
+  justify-content: initial;
+}
+
+.review--reviewer svg {
+  fill: var(--color-argent);
+  width: 54px;
+  height: 54px;
+}
+
+.reviewer--name-location {
+  justify-content: space-evenly;
+  padding-left: 22px;
+}
+
+.reviewer--name,
+.reviewer--location {
+  font-size: 18px;
+  color: var(--color-onyx);
+}
+
+.reviewer--location {
+  padding-top: 8px;
+  color: var(--color-argent);
+}
+
+.item__review {
+  padding: 24px;
+}
+
+.item__review > p {
+  padding: 24px 0;
+  font-size: 18px;
+  color: var(--color-onyx);
+}
+
+.reviews__dots {
+  display: none;
+}
+
+.reviews__slider {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+}
+
 .sign-up {
   position: relative;
   display: flex;
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: #EAF0F9;
+  background-color: var(--color-anti-flash-white2);
 }
 
 .icon__web {
@@ -539,7 +668,7 @@ button {
   color: var(--color-white);
 }
 
-.category__title {
+.category__main {
   font-weight: 400;
 }
 
@@ -599,7 +728,8 @@ button {
   }
 
   .item-hostel,
-  .item-island{
+  .item-island,
+  .item-marocco {
     display: none;
   }
 
@@ -613,7 +743,7 @@ button {
   }
 
   .destinations {
-    padding-bottom: 120px;
+    padding-bottom: 0;
   }
 
   .destinations__caption {
@@ -628,11 +758,10 @@ button {
     filter: initial;
   }
 
-  .destination__slider {
+  .destinations__slider {
     position: absolute;
     width: 100%;
     top: 35%;
-    height: auto;
   }
 
   .slider__button--up {
@@ -791,7 +920,8 @@ button {
 
   .top-section__menu ul,
   .item-villa,
-  .item-norway {
+  .item-norway,
+  .item-netherlands {
     display: none;
   }
 
@@ -843,6 +973,10 @@ button {
   .homes__description,
   .destinations__caption {
     font-size: 12px;
+  }
+
+  .destinations__slider {
+    top: 40%;
   }
 
   .homes__name {
@@ -922,6 +1056,79 @@ button {
     color: var(--color-celtic-blue2)
   }
 
+  .reviews {
+    background: var(--color-anti-flash-white2);
+  }
+
+  .reviews__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__item {
+    max-width: 327px;
+  }
+
+  .review--location-grade {
+    padding: 12px 0 19px 0;
+  }
+
+  .review--location p {
+    font-size: 15px;
+  }
+
+  .review--grade div {
+    padding: 3px 9px;
+    font-size: 15px;
+  }
+
+  .review--grade p {
+    font-size: 12px;
+  }
+
+  .review--reviewer svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .reviewer--name-location p {
+    font-size: 15px;
+  }
+
+  .reviewer--name-location {
+    padding-left: 13px;
+  }
+
+  .reviewer--location {
+    padding-top: 0;
+  }
+
+  .item__review > p {
+    padding: 21px 0;
+    font-size: 15px;
+  }
+
+  .item__review {
+    padding: 0;
+  }
+
+  .location--name {
+    padding-top: 8px;
+  }
+
+  .reviews__slider {
+    display: none;
+  }
+
+  .reviews__dots svg {
+    width: 56px;
+    height: 8px;
+  }
+
+  .reviews__dots {
+    display: flex;
+  }
+
   .footer__top,
   .footer__top a {
     display: flex;
@@ -948,7 +1155,7 @@ button {
     padding-bottom: 16px;
   }
 
-  .category__title {
+  .category__main {
     font-size: 15px;
     text-decoration-line: underline;
     text-align: center;

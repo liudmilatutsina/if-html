@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1" />
-    <title>What do we offer</title>
+    <title>Triphouse</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/png/icon.png">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; visibility: hidden; width: 0; height: 0">
@@ -345,6 +346,12 @@
           stroke-width="2"
         />
       </symbol>
+      <symbol id="navigation-svg" viewBox="0 0 56 8">
+        <circle cx="4" cy="4" r="4" fill="#333333"/>
+        <circle cx="20" cy="4" r="3.5" stroke="#333333" fill="#EAF0F9"/>
+        <circle cx="36" cy="4" r="3.5" stroke="#333333" fill="#EAF0F9"/>
+        <circle cx="52" cy="4" r="3.5" stroke="#333333" fill="#EAF0F9"/>
+      </symbol>
       <symbol id="sign-up-svg" viewBox="0 0 86 86">
         <circle cx="43" cy="43" r="43" fill="white" />
         <path
@@ -396,7 +403,7 @@
             </div>
           </nav>
         </div>
-        <h2 class="top-section__title h2-style">
+        <h2 class="top-section__title">
           Discover stays<br />
           to live, work or just relax
         </h2>
@@ -585,7 +592,7 @@
             </div>
             <figcaption class="destinations__caption">Island</figcaption>
           </figure>
-          <div class="destination__slider flex-row">
+          <div class="destinations__slider flex-row">
             <button type="button" class="slider__button slider__button--up">
               <svg fill="none" class="arrow">
                 <use href="#arrow-svg"></use>
@@ -596,6 +603,124 @@
                 <use href="#arrow-svg"></use>
               </svg>
             </button>
+          </div>
+        </div>
+      </section>
+      <section class="reviews container">
+        <h2 class="h2-style">Guests reviews</h2>
+        <div class="reviews__items carousel__items flex-row">
+          <figure class="reviews__item col-web-4 col-mob-6">
+            <div class="item__img">
+              <img alt="" src="./images/png/reviews--item1.png">
+              <div class="img-price">
+                <p>From 250 USD</p>
+              </div>
+            </div>
+            <figcaption class="item__review">
+              <div class="review--location-grade flex-row">
+                <div class="review--location">
+                  <p class="location--hotel">Ubud Bali Resort&SPA</p>
+                  <p class="location--name">Bali, Indonesia</p>
+                </div>
+                <div class="review--grade flex-column">
+                  <div>9,4</div>
+                  <p>1324 reviews</p>
+                </div>
+              </div>
+              <div class="review--reviewer flex-row">
+                <svg>
+                  <use href="#account-svg"></use>
+                </svg>
+                <div class="reviewer--name-location flex-column">
+                  <p class="reviewer--name">Hanna Ivanova</p>
+                  <p class="reviewer--location">🇺🇦 Ukraine</p>
+                </div>
+              </div>
+              <p>
+                Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="reviews__item item-netherlands col-web-4 col-mob-6">
+            <div class="item__img">
+              <img alt="" src="./images/png/reviews--item2.png" class="content__reviews--item--img-block--img">
+              <div class="img-price">
+                <p>From 40 USD</p>
+              </div>
+            </div>
+            <figcaption class="item__review">
+              <div class="review--location-grade flex-row">
+                <div class="review--location">
+                  <p class="location--hotel">King Kong Hostel</p>
+                  <p class="location--name">Rotterdam, Netherlands</p>
+                </div>
+                <div class="review--grade flex-column">
+                  <div>8,9</div>
+                  <p>2016 reviews</p>
+                </div>
+              </div>
+              <div class="review--reviewer flex-row">
+                <svg>
+                  <use href="#account-svg"></use>
+                </svg>
+                <div class="reviewer--name-location flex-column">
+                  <p class="reviewer--name">Adam Smith</p>
+                  <p class="reviewer--location">🇺🇸 USA</p>
+                </div>
+              </div>
+              <p>
+                I've been in this hostel for a month and here is the best hostel of all. Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent. Most importantly, those who work here are kind and good-natured.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="reviews__item item-marocco col-web-4 col-mob-6">
+            <div class="item__img">
+              <img alt="" src="./images/png/reviews--item3.png" class="content__reviews--item--img-block--img">
+              <div class="img-price">
+                <p>From 100 USD</p>
+              </div>
+            </div>
+            <figcaption class="item__review">
+              <div class="review--location-grade flex-row">
+                <div class="review--location">
+                  <p class="location--hotel">Rokoko Hotel</p>
+                  <p class="location--name">Ourika, Marocco</p>
+                </div>
+                <div class="review--grade flex-column">
+                  <div>9,1</div>
+                  <p>815 reviews</p>
+                </div>
+              </div>
+              <div class="review--reviewer flex-row">
+                <svg>
+                  <use href="#account-svg"></use>
+                </svg>
+                <div class="reviewer--name-location">
+                  <p class="reviewer--name">Anika Messer</p>
+                  <p class="reviewer--location">🇩🇪 Germany</p>
+                </div>
+              </div>
+              <p>
+                Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.
+              </p>
+            </figcaption>
+          </figure>
+          <div class="reviews__slider flex-row">
+            <button type="button" class="slider__button slider__button--previous">
+              <svg fill="none" class="arrow">
+                <use href="#arrow-svg"></use>
+              </svg>
+            </button>
+            <button type="button" class="slider__button slider__button--next">
+              <svg fill="none" class="arrow">
+                <use href="#arrow-svg"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="reviews__dots">
+            <svg>
+              <use href="#navigation-svg"></use>
+            </svg>
           </div>
         </div>
       </section>
@@ -638,7 +763,7 @@
         <div class="footer__categories flex-row">
           <ul class="footer__category category--about">
             <li>
-              <a class="category__txt category__title" href="">About</a>
+              <a class="category__txt category__main" href="">About</a>
             </li>
             <li>
               <a class="category__txt" href="">How Triphouse works</a>
@@ -654,7 +779,7 @@
             </li>
           </ul>
           <ul class="footer__category category--types">
-            <li><a class="category__txt category__title" href="">Property types</a></li>
+            <li><a class="category__txt category__main" href="">Property types</a></li>
             <li><a class="category__txt" href="">Guest houses</a></li>
             <li><a class="category__txt" href="">Hotels</a></li>
             <li><a class="category__txt" href="">Apartments</a></li>
@@ -663,7 +788,7 @@
             <li><a class="category__txt" href="">Hostels</a></li>
           </ul>
           <ul class="footer__category category--support">
-            <li><a class="category__txt category__title" href="">Support</a></li>
+            <li><a class="category__txt category__main" href="">Support</a></li>
             <li><a class="category__txt" href="">Contact Customer Service</a></li>
             <li><a class="category__txt" href="">FAQ</a></li>
           </ul>
