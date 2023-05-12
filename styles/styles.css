@@ -297,6 +297,10 @@ button {
   width: 100px;
 }
 
+.advantages {
+  order: 1;
+}
+
 .advantages__items {
   flex-wrap: wrap;
 }
@@ -314,6 +318,7 @@ button {
 
 /*Homes block styles*/
 .homes {
+  order: 2;
   background-color: var(--color-anti-flash-white2);
 }
 
@@ -391,7 +396,8 @@ button {
 }
 
 .destinations {
-  padding-bottom: 90px;
+  order: 3;
+  padding-bottom: 210px;
 }
 
 .destinations__buttons {
@@ -467,6 +473,10 @@ button {
 }
 
 /*Reviews block*/
+
+.reviews {
+  order: 5;
+}
 
 .reviews__items {
   position: relative;
@@ -593,6 +603,7 @@ button {
   position: relative;
   display: flex;
   align-items: center;
+  order: 4;
   padding-top: 0;
   padding-bottom: 0;
   background-color: var(--color-anti-flash-white2);
@@ -743,7 +754,7 @@ button {
   }
 
   .destinations {
-    padding-bottom: 0;
+    padding-bottom: 120px;
   }
 
   .destinations__caption {
@@ -1005,6 +1016,7 @@ button {
   }
 
   .sign-up {
+    order: 5;
     max-width: 360px;
     padding: 24px 17px;
     background-color: initial;
@@ -1057,6 +1069,7 @@ button {
   }
 
   .reviews {
+    order: 4;
     background: var(--color-anti-flash-white2);
   }
 
